@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<section>
-			<div class="h3"><h2>Scroll down</h2></div>
+			<div><h2>Scroll down</h2></div>
 		</section>
 
 		<section class="middle">
@@ -48,6 +48,10 @@
 			</div>
 		</section>
 
+		<section>
+			<h2 class="scrollUp">Scroll up</h2>
+		</section>
+
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
 			integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
@@ -66,6 +70,7 @@
 					trigger: ".middle",
 					start: "top 20%",
 					end: "bottom+=20% center",
+					toggleActions: "play reverse play reverse",
 				},
 			});
 
